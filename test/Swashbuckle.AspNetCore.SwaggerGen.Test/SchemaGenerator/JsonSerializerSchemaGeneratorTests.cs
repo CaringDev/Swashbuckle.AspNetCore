@@ -295,6 +295,7 @@ namespace Swashbuckle.AspNetCore.SwaggerGen.Test
         [Theory]
         [InlineData(typeof(TypeWithValidationAttributes))]
         [InlineData(typeof(TypeWithValidationAttributesViaMetadataType))]
+        [InlineData(typeof(RecordWithValidationAttributes))]
 
         public void GenerateSchema_SetsValidationProperties_IfComplexTypeHasValidationAttributes(Type type)
         {
